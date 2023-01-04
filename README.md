@@ -9,14 +9,12 @@ After researching this topic online, I noticed that most LinkedIn automation pro
 
 ## Installation
 
-- First you need to [download the repo](https://github.com/zdhenard42/Linked_Connect_Bot/archive/refs/tags/V1.0.zip)download the repo and extract the folder to somewhere on your desktop  
-- Then you need to download the chromedriver that corresponds with your chrome version.  
-	To find your chrome version, paste the following in your address bar:  
+- First you need to [download the repo](https://github.com/zdhenard42/Linked_Connect_Bot/archive/refs/tags/V1.0.zip) and extract the folder to somewhere on your desktop  
+- Then you need to [download the chromedriver](https://chromedriver.chromium.org/downloads) that corresponds with your chrome version.  
 	```sh
-	chrome://settings/help
+	To find your chrome version, paste the following in your address bar: chrome://settings/help
 	```
-  
-- After finding your version, go to https://chromedriver.chromium.org/downloads and download the corresponding chromedriver.  
+	  
 - Place the chromedriver executable into the folder that contains "MyConnectmenu.py"
 - Run MyConnectmenu.py
 - Profit
