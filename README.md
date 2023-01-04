@@ -9,26 +9,18 @@ After researching this topic online, I noticed that most LinkedIn automation pro
 
 ## Installation
 
-- First you need to [download the repo](https://github.com/zdhenard42/Linked_Connect_Bot/archive/refs/tags/V1.0.zip) and extract the folder to somewhere on your desktop  
-- Then you need to [download the chromedriver](https://chromedriver.chromium.org/downloads) that corresponds with your chrome version.  
-	```sh
-	To find your chrome version, paste the following in your address bar: chrome://settings/help
-	```
-	  
-- Place the chromedriver executable into the folder that contains "MyConnectmenu.py"
+- [Download the repo](https://github.com/zdhenard42/Linked_Connect_Bot/archive/refs/tags/V1.0.zip) and extract the folder to somewhere on your desktop 
 - Run MyConnectmenu.py
 - Profit
-
 
 ## Usage example
 
 Using this program, you can quickly grow your connections 1000+ in 1-2 weeks.  
 I recommend not sending more than 100 connections a day to avoid a temporary cooldown by LinkedIn
 
-## Development setup
+## Credits
 
-Feel free to contribute to the code.  
-It is open source for a reason!  
+Massive shoutout to ULTRAFUNKAMSTERDAM (https://github.com/ultrafunkamsterdam) for the undetected_chromedriver. 
 
 ## Socials
 
