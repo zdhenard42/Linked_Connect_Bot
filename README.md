@@ -22,7 +22,7 @@ After researching this topic online, I noticed that most LinkedIn automation pro
 
 ## Usage example
 
-Using this program, you can quickly grow your connections to 1000+ in 1-2 weeks.  
+Using this program, you can quickly grow your connections 1000+ in 1-2 weeks.  
 I recommend not sending more than 100 connections a day to avoid a temporary cooldown by LinkedIn
 
 ## Development setup
