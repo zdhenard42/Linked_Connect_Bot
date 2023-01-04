@@ -3,7 +3,8 @@
 
 
 After researching this topic online, I noticed that most LinkedIn automation programs are charging outrageous amounts to simply send connection requests.  
-	I created this free open source program to do exactly that.
+        
+	I created this free open source program to do exactly that.  
 
 <img src="https://imgur.com/45KTGOu.gif" alt="alt text" width="700px" height="auto">
 
