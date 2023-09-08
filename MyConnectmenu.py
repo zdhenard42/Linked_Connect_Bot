@@ -1,4 +1,3 @@
-from selenium import webdriver
 from random import randint
 import undetected_chromedriver as uc
 from undetected_chromedriver.options import ChromeOptions
@@ -16,9 +15,9 @@ def main():
 
     # Feel free to comment out the three lines below and uncomment the fourth one if you would like to watch the process!
     myoptions = ChromeOptions()
-    #myoptions.add_argument("--headless")
+    myoptions.add_argument("--headless")
     driver = uc.Chrome(options=myoptions)
-    # driver = uc.Chrome
+    #driver = uc.Chrome
     
     # Opening LinkedIn Signinpage
     urltoSignInPage = 'https://www.linkedin.com/login?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin'
@@ -58,7 +57,7 @@ def chose_Connect(driver):
     
     i = 0
     # if program is crashing, increment K variable below by 5
-    k = 10
+    k = 25
     print("\nBeginning connection request process...\nThere is a delay between requests intentionally to bypass bot detections")
     while i < maxConnect:
         try:
@@ -67,7 +66,7 @@ def chose_Connect(driver):
             
             # Load the search results page and wait for it to load
             driver.get(urllink)
-            time.sleep(2)
+            time.sleep(randint(4, 15))
 
             # Find all the Connect buttons on the page
             all_buttons = driver.find_elements(By.TAG_NAME, "button")
@@ -83,7 +82,6 @@ def chose_Connect(driver):
                 driver.execute_script("arguments[0].click();", send)
                 close = driver.find_element(By.XPATH, "//button[@aria-label='Dismiss']")
                 driver.execute_script("arguments[0].click();", close)
-                time.sleep(randint(4, 15))
                 time.sleep(2)
 
             # If there are no more Connect buttons on the page, go to the next page
@@ -96,6 +94,7 @@ def chose_Connect(driver):
 
             # Print the total number of connection requests sent so far
             print(f"Connection Invitations sent = {i}")
+            time.sleep(randint(4, 15))
 
             # Exit the loop if the maximum number of connections has been reached
             if i >= maxConnect:
@@ -104,7 +103,6 @@ def chose_Connect(driver):
     # Handle any exceptions that may arise during the process
         except Exception as e:
             print(f"An error occurred: {str(e)}")
-            break
 
 
 def chose_withdraw(driver):

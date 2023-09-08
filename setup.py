@@ -11,10 +11,11 @@ Y88b.    888  888 888    Y88..88P 888  888  888 Y8b.     Y88b 888 888     888  Y
 
 BY ULTRAFUNKAMSTERDAM (https://github.com/ultrafunkamsterdam)"""
 
-from setuptools import setup
+import codecs
 import os
 import re
-import codecs
+
+from setuptools import setup
 
 
 dirname = os.path.abspath(os.path.dirname(__file__))
@@ -40,10 +41,11 @@ setup(
     version=version,
     packages=["undetected_chromedriver"],
     install_requires=[
-        "selenium>=4.0.0",
+        "selenium>=4.9.0",
         "requests",
         "websockets",
     ],
+    package_data={"undetected_chromedriver": [os.path.join("example", "example.py")]},
     url="https://github.com/ultrafunkamsterdam/undetected-chromedriver",
     license="GPL-3.0",
     author="UltrafunkAmsterdam",
